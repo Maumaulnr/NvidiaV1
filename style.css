@@ -1,0 +1,371 @@
+/* ****************************************GENERAL******************************************* */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    /* responsive */
+
+@media only screen and (min-device-width : 280px) and (max-device-width : 480px) {
+    #container {
+        width: 100%;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    li {
+        padding-bottom: 10px;
+    }
+
+    .informations {
+        height: 50px;
+    }
+
+    .center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    
+
+}
+
+
+/* ****************************************HEADER******************************************* */
+
+    /* logo */
+
+.logo {
+    display: flex;
+    background-color: white;
+}
+
+    /* barre de navigation */
+
+nav {
+    display: flex;
+    padding-top: 10px;
+    /* border: 3px solid black; */  /* landmark */
+}
+
+.liste {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    }
+
+li {
+    display: inline;
+    padding: 0 20px;
+    color: black;
+    font-weight: bold;
+}
+
+    /* image de présentation */
+
+        /* image */
+
+.RTX2060 {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+        /* présentation */
+
+.presentation {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    /* border: 2px solid yellow; */ /* landmark */
+}
+
+.presentation .informations {
+    position: absolute;
+    bottom: 0; /* bas de l'image */
+    background: rgba(10, 168, 52, 0.5); /* Green background with 0.5 opacity */ 
+    color: white; /* White text */
+    width: 100%;
+    padding: 5px;
+}
+
+p {
+    position: inherit;
+    padding-top: 3px;
+}
+
+        /* bouton */
+
+.btn {
+    display: flex;
+    float: right;
+    background-color: #7bb404;
+    color: white;
+    padding: 5px;
+    border-radius: 6px;
+    border: #7bb404;
+    cursor: pointer;
+}
+
+/* ****************************************MAIN******************************************* */
+
+    /* bloc central */
+
+.center {
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 2px solid blue; */   /* landmark */
+}
+
+    /* ****************Titre de l'article et l'article***************  */
+
+.texte {
+    /* border: 2px solid rgb(228, 68, 204); */  /* landmark */
+    width: 70%;
+    padding-bottom: 20px;
+    padding-right: 15px;
+    border-bottom: 2px solid #7bb404;
+}
+
+    /* Titre de l'article */
+
+.toparticle {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    align-items: center;
+    padding: 10px 10px 10px 0;
+    /* background-color: rgb(223, 18, 18); */   /* landmark */
+}
+
+        /* titre */
+
+        /* image logo */
+
+.logo-article {
+    width: 35px;
+    margin-right: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+    /* Article */
+
+/* .article {
+    background-color: rgb(159, 15, 94); 
+} */                                        /* landmark */
+
+.description {
+    padding-bottom: 10px;
+    font-size: medium;
+    text-align: justify;
+}
+
+    /* *************A Propos************* */
+
+aside {
+    width: 30%;
+    background-color: #7bb404;
+    border-bottom: 2px solid #7bb404;
+}
+
+
+
+        /* Titre figcaption */
+
+.top {
+    text-align: center;
+    padding: 20px 15px 15px 15px;
+}
+
+h4 {
+    color: white;
+}
+
+        /* image */
+
+.nvidia-propos {
+    width: 90px;
+    padding-top: 15px;
+}
+
+        /* texte */
+
+.propos_paragraph {
+    padding: 10px 10px 25px 10px;
+}
+
+.propos {
+    padding-bottom: 20px;
+    color: white;
+    font-size: small;
+    text-align: justify;
+}
+
+    /* **********liens réseaux sociaux******** */
+
+.social-network {
+    padding: 95px 15px 0 25px;
+}
+
+.social-network_icons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+    /* Flèche indicative */
+
+.widget-title {
+    position: relative;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 18px solid #7bb404;
+    
+}
+
+
+/* ****************************************FOOTER******************************************* */
+
+.footer {
+    display: flex;
+    padding-top: 15px;
+    /* border: 2px solid red; */    /* landmark */
+    height: 120px;
+}
+
+    /* NEWSLETTER */
+
+.newsletter {
+    /* background-color: blueviolet; */ /* landmark */
+    width: 40%;
+}
+
+        /* Titre */
+
+.title-newsletter {
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+        /*  Case à remplir */
+
+.input {
+    width: 25%;
+}
+
+.form-control {
+    /* width: 170px; */
+    height: 30px;
+    padding: 15px 0 15px 4px;
+    margin-bottom: 5px;
+    font-size: medium;
+}
+
+        /* S'inscrire (bouton) */
+
+.inscrire {
+    position: relative;
+    left: 205px;
+    top: -33px;
+    width: 20%;
+    background-color: #7bb404;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+}
+
+    /* GALERIE */
+
+.galerie {
+    display: flex;
+    flex-direction: column;
+    padding-right: 5px;
+    width: 40%;
+    /* background-color: aqua; */  /* landmark */
+}
+
+        /* Titre */
+
+.title-galerie {
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+        /* images */
+
+.images-container {
+    display: flex;
+    /* border: 2px solid black; */  /* landmark */
+    
+}
+
+.gallery {
+    padding: 0 5px 0 5px;
+  } 
+
+    /* PARTENAIRES */
+
+.partenaires {
+    display: flex;
+    flex-direction: column;
+    padding-left: 19px;
+    /* background-color: brown; */  /* landmark */
+}
+
+        /* Titre */
+
+.title-partenaires {
+    width: 100%;
+    padding-bottom: 13px;
+}
+
+        /* images/liens */
+
+.partenaires-container {
+    display: flex;
+    /* border: 2px solid black; */  /* landmark */
+    align-items: center;
+    height: 100%;
+}
